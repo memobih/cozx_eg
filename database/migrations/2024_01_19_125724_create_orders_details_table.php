@@ -17,6 +17,8 @@ return new class extends Migration
             $table->integer('size_id');
             $table->integer('color_id');
             $table->bigInteger('quantity');
+            $table->bigInteger('price');
+            $table->foreignId('order_id')->constrained('orders','id');
             $table->timestamps();
         });
     }

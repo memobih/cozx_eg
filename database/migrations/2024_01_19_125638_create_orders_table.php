@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users' ,'id')->cascadeOnUpdate()->cascadeOnDelete();
             $table->bigInteger('price');
-            $table->enum('statue',['progress' ,'completed']);
+            $table->enum('statue',['progress' ,'completed','shipped','placed']);
             $table->boolean('isPayed');
             $table->timestamps();
         });
