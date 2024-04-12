@@ -21,7 +21,7 @@ $cartItems = \Gloudemans\Shoppingcart\Facades\Cart::instance('cart')->content();
     <link rel="stylesheet" href="/public/{{asset('dist/css/nice-select.css')}}" type="text/css">
     <link rel="stylesheet" href="/public/{{asset('dist/css/jquery-ui.min.css')}}" type="text/css">
     <link rel="stylesheet" href="/public/{{asset('dist/css/slicknav.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/dist/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/public/{{asset('dist/css/style.css')}}" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     @yield('style')
