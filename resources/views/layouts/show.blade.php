@@ -13,15 +13,15 @@ $cartItems = \Gloudemans\Shoppingcart\Facades\Cart::instance('cart')->content();
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/bootstrap.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/font-awesome.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/themify-icons.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/elegant-icons.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/owl.carousel.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/nice-select.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/jquery-ui.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/slicknav.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="/public/{{asset('dist/css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/public/assets/dist/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     @yield('style')
@@ -298,16 +298,16 @@ $cartItems = \Gloudemans\Shoppingcart\Facades\Cart::instance('cart')->content();
 </footer>
 </body>
 @yield('script')
-<script src="/public/{{asset('dist/js/jquery-3.3.1.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/bootstrap.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery-ui.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery.countdown.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery.nice-select.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery.zoom.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery.dd.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/jquery.slicknav.js')}}"></script>
-<script src="/public/{{asset('dist/js/owl.carousel.min.js')}}"></script>
-<script src="/public/{{asset('dist/js/main.js')}}"></script>
+<script src="/public/assets/dist/js/jquery-3.3.1.min.js"></script>
+<script src="/public/assets/dist/js/bootstrap.min.js"></script>
+<script src="/public/assets/dist/js/jquery-ui.min.js"></script>
+<script src="/public/assets/dist/js/jquery.countdown.min.js"></script>
+<script src="/public/assets/dist/js/jquery.nice-select.min.js"></script>
+<script src="/public/assets/dist/js/jquery.zoom.min.js"></script>
+<script src="/public/assets/dist/js/jquery.dd.min.js"></script>
+<script src="/public/assets/dist/js/jquery.slicknav.js"></script>
+<script src="/public/assets/dist/js/owl.carousel.min.js"></script>
+<script src="/public/assets/dist/js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
