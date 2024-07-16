@@ -11,7 +11,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/env-variables', function () {
+    // Get all environment variables
+    $envVariables = $_ENV;
+    dd($envVariables); 
+    return redirect()->back();
+});
 Route::get('shopFilter', function()   {
    return view('shopFilter');
 });
