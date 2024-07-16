@@ -10,9 +10,9 @@ use Cart;
 class showController extends Controller
 {
      public  function show( ){
-         $categories=Category::all();
-         $departments=HomeCategories::select()->first();
-         $cartItems = Cart::instance('cart')->content();
+         $categories="aa";
+         $departments="";
+         $cartItems ="aa";
         visitor()->visit(); // create a visit log
          return view('index' , compact('departments' , 'categories','cartItems' ));
      }
