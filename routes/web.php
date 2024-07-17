@@ -10,7 +10,13 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+*/ 
+Route::get('/disk', function () {
+    // Get all environment variables
+$disks = config('filesystems.disks');  
+    dd($disks); 
+    return redirect()->back();
+});
 Route::get('/env-variables', function () {
     // Get all environment variables
     $envVariables = $_ENV;
