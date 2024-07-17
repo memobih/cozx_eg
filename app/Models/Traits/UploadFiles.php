@@ -10,7 +10,7 @@ trait UploadFiles
             if (!empty($category->image) && Storage::exists($category->image)) {
                 Storage::delete($category->image);
             }
-            $model->image = request()->file('image')->store('category');
+            $model->image = request()->file('image')->store('category','azure');
         }
     }
 
