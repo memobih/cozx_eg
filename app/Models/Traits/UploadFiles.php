@@ -1,7 +1,7 @@
 <?php
 namespace App\Models\Traits;
 use Illuminate\Support\Facades\Storage;
-
+use Illuminate\Support\Str;
 trait UploadFiles
 {
     public static function UploadPhoto($model)
