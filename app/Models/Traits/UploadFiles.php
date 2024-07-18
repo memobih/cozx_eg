@@ -7,10 +7,12 @@ trait UploadFiles
     public static function UploadPhoto($model)
     {
         if (request()->hasFile('image')) {
-            if (!empty($category->image) && Storage::exists($category->image)) {
-                Storage::delete($category->image);
-            }
-            $model->image = request()->file('image')->store('category','azure');
+          $file=request()->file('image'); 
+        $fileName = uniqid() . Str::random(5) . time() . '.' . $file->getClientOriginalExtension();
+        $contentType = $file->getClientMimeType();
+        $options = ['Content-Type' => $contentType];
+        Storage::disk('azure')->putFileAs($path, $file, $fileName, $options);
+         $model->image = Storage::disk('azure')->url("$path/$fileName");
         }
     }
 
