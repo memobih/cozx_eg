@@ -45,11 +45,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'cozx.mysql.database.azure.com'),
+            'host' => env('DB_HOST', 'SG-cozxeg-9896-mysql-master.servers.mongodirector.com'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'cozxeg'),
             'username' => env('DB_USERNAME', 'cozxeg'),
-            'password' => env('DB_PASSWORD', 'ma2003mA#'),
+            'password' => env('DB_PASSWORD', '5hUQnlm-hmsDX917'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
