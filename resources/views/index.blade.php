@@ -9,7 +9,7 @@
                 <div class="col-lg-4">
                     <div class="single-banner">
                         <a href="{{route('shop.show',['category_id'=>$departments->category1->id])}}"> <img
-                                src="{{\Illuminate\Support\Facades\Storage::url($departments->category1->image)}}" alt></a>
+                                src="{{category1->image}}" alt></a>
                         <div class="inner-text">
                             <h4>{{$departments->category1->name}}</h4>
                         </div>
