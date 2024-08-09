@@ -21,7 +21,7 @@
                 <div class="col-lg-4">
                     <div class="single-banner">
                         <a href="{{route('shop.show',['category_id'=>$departments->category3->id])}}"> <img
-                                src="{{\Illuminate\Support\Facades\Storage::url($departments->category3->image)}}" alt></a>
+                                src="{{$departments->category3->image}}" alt></a>
                         <div class="inner-text">
                             <h4>{{$departments->category3->name}}</h4>
                         </div>
@@ -33,7 +33,7 @@
                 <div class="col-lg-4">
                     <div class="single-banner">
                         <a href="{{route('shop.show',['category_id'=>$departments->category2->id])}}">
-                            <img src="{{\Illuminate\Support\Facades\Storage::url($departments->category2->image)}}" alt>
+                            <img src="{{$departments->category2->image}}" alt>
                         </a>
                         <div class="inner-text">
                             <h4>{{$departments->category2->name}}</h4>
@@ -63,7 +63,7 @@
                                 <div class="product-item">
                                     <div class="pi-pic">
                                         <img width="100%" height="100%"
-                                             src="{{\Illuminate\Support\Facades\Storage::url($product->image)}}" alt>
+                                             src="{{$product->image}}" alt>
                                         @if(!empty($product->offer->first()->discount))
                                         <div class="sale">Sale</div>
                                         @endif
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="product-large set-bg m-large"
-                         data-setbg="{{\Illuminate\Support\Facades\Storage::url($departments->category1->image)}}">
+                         data-setbg="{{$departments->category1->image}}">
                         <h2>{{$departments->category1->name}}</h2>
                         <a href="{{route('shop.show',['category_id'=>$departments->category1->id])}}">Discover More</a>
                     </div>
@@ -115,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="product-large set-bg"
-                         data-setbg="{{\Illuminate\Support\Facades\Storage::url($departments->category2->image)}}"
+                         data-setbg="{{$departments->category2->image}}"
                          style="background-image: url(&quot;../image/banner-1.jpg&quot;);">
                         <h2>{{$departments->category2->name}}</h2>
                         <a href="{{route('shop.show',['category_id'=>$departments->category2->id])}}">Discover More</a>
@@ -136,7 +136,7 @@
                                 <div class="product-item">
                                     <div class="pi-pic">
                                         <img width="100%" height="100%"
-                                             src="{{\Illuminate\Support\Facades\Storage::url($product->image)}}" alt>
+                                             src="{{$product->image}}" alt>
                                         @if(!empty($product->offer->first()->discount))
                                             <div class="sale">Sale</div>
                                         @endif
@@ -192,7 +192,7 @@
                                 <div class="product-item">
                                     <div class="pi-pic">
                                         <img width="100%" height="100%"
-                                             src="{{\Illuminate\Support\Facades\Storage::url($product->image)}}" alt>
+                                             src="{{$product->image}}" alt>
                                         @if(!empty($product->offer->first()->discount))
                                             <div class="sale">Sale</div>
                                         @endif
@@ -227,7 +227,7 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="product-large set-bg m-large"
-                         data-setbg="{{\Illuminate\Support\Facades\Storage::url($departments->category3->image)}}">
+                         data-setbg="{{departments->category3->image}}">
                         <h2>{{$departments->category3->name}}</h2>
                         <a href="{{route('shop.show',['category_id'=>$departments->category3->id])}}">Discover More</a>
                     </div>
