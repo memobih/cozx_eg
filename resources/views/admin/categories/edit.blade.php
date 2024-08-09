@@ -55,7 +55,7 @@
                                         @enderror
                                     </div>
                                     <div class="col-md-8">
-                                        <img alt="image" src="{{Storage::url($category->image)}}" height="50" width="50">
+                                        <img alt="image" src="{{$category->image}}" height="50" width="50">
                                         <label class="form-label">category image</label><br>
                                         <div id="editor">
                                             <input type="file" name="image" class="form-control">
