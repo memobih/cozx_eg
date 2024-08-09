@@ -42,7 +42,7 @@
                                     <div class="product-item">
                                         <div class="pi-pic">
                                             <img style="width: 350px ; height: 350px"
-                                                 src="{{\Illuminate\Support\Facades\Storage::url($product->image)}}"
+                                                 src="{{$product->image}}"
                                                  alt>
                                             @if(!empty($product->offer->first()->discount))
                                             <div class="sale pp-sale">Sale</div>
