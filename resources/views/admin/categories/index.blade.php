@@ -34,7 +34,7 @@
                                         <td>{{$category->id}}</td>
                                         <td>{{$category->name}}</td>
                                         <td>{{$category->description}}</td>
-                                        <td><img src='{{Storage::url($category->image)}}' class="avatar lg rounded me-2" alt="profile-image"></td>
+                                        <td><img src='{{$category->image}}' class="avatar lg rounded me-2" alt="profile-image"></td>
                                         <td><a href="Category/{{$category->id}}/edit" class="btn btn-primary"> edit</a></td>
                                         <form method="post" action="{{route('Category.destroy',['Category'=>$category->id])}}">
                                             @csrf
