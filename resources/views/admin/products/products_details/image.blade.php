@@ -42,7 +42,7 @@
         <tr>
             <th scope="row">1</th>
             <td>{{$image->color->name}}</td>
-            <td><img width="100" height="100" src="{{\Illuminate\Support\Facades\Storage::url($image->image)}}"></td>
+            <td><img width="100" height="100" src="{{$image->image}}"></td>
             <td class="align-items-center">
                 <form method="post"
                       action="{{route('productImage.destroy',['productImage'=>$image->id])}}">
