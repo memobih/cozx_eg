@@ -4683,7 +4683,7 @@ body {
                                         @foreach($cartItems as $item)
                                             <tr>
                                                 <td class="si-pic"><img
-                                                        src="{{\Illuminate\Support\Facades\Storage::url($item->model->images->where('color_id',$item->options[1])->first()->image)}}"
+                                                        src="{{$item->model->images->where('color_id',$item->options[1])->first()->image}}"
                                                         alt></td>
                                                 <td class="si-text">
                                                     <div class="product-selected">
