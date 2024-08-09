@@ -34,7 +34,7 @@
                                     <td>{{$product->code}}</td>
                                     <td>{{$product->name}}</td>
                                     <td>{{$product->description}}</td>
-                                    <td><img src='{{Storage::url($product->image)}}' class="avatar lg rounded me-2"
+                                    <td><img src='{{product->image}}' class="avatar lg rounded me-2"
                                              alt="profile-image"></td>
                                     @if(!empty($product->category->name))
                                         <td>{{$product->category->name}}</td>
