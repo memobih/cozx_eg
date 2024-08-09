@@ -11,6 +11,7 @@ trait UploadFiles
         $fileName = uniqid() . Str::random(5) . time() . '.' . $file->getClientOriginalExtension();
         $contentType = $file->getClientMimeType();
         $options = ['Content-Type' => $contentType];
+        $path="photo";
         Storage::disk('azure')->putFileAs($path, $file, $fileName, $options);
          $model->image = Storage::disk('azure')->url("$path/$fileName");
         }
