@@ -8,13 +8,13 @@
             <div class="slider mt-3">
                 <div class="product">
                     @foreach($images as $image )
-                        <img src="{{\Illuminate\Support\Facades\Storage::url($image->image)}}" alt=""
+                        <img src="{{$image->image}}" alt=""
                              onclick="clickme(this)">
                     @endforeach
                 </div>
                 <div class="preview">
                      @if(!empty(($images->first()->image)))
-                    <img src="{{\Illuminate\Support\Facades\Storage::url($images->first()->image)}}" id="imagebox"
+                    <img src="{{$images->first()->image}}" id="imagebox"
                          alt="">
                          @endif
                 </div>
@@ -74,7 +74,7 @@
                                             @if(!empty( \App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image ))
                                             <img style="opacity: 1" width="60px" height="30px"
 
-                                                                               src="{{\Illuminate\Support\Facades\Storage::url( \App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image)}}"></label>
+                                                                               src="{{\App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image}}"></label>
                                         @endif
                                     </div>
                                     @elseif(!empty( \App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image ))
@@ -82,7 +82,7 @@
                                         <input wire:click="change_color({{$color->color_id}})" type="radio"
                                                id="{{$color->color_id}}" name="color_id" value="{{$color->color_id}}">
                                         <label for="{{$color->color_id}}"><img width="60px" height="30px"
-                                                                               src="{{\Illuminate\Support\Facades\Storage::url( \App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image)}}"></label>
+                                                                               src="{{ \App\Models\ProductImage::get()->first()->where('color_id',$color->color_id)->where('product_code',$product->code)->first()->image}}"></label>
                                     </div>
                                 @endif
                             @endforeach
