@@ -136,7 +136,7 @@
                                         <tr>
                                             <th scope="row">1</th>
                                             <td>{{$image->color->name}}</td>
-                                            <td><img src="{{\Illuminate\Support\Facades\Storage::url($image->image)}}"></td>
+                                            <td><img src="{{$image->image}}"></td>
                                             <td>
                                                 <form method="post" action="{{route('productImage.destroy',['productImage'=>$image->id])}}">
                                                     @csrf
