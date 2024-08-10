@@ -13,7 +13,7 @@ trait UploadFiles
         $options = ['Content-Type' => $contentType];
         $path="photo";
         Storage::disk('azure')->putFileAs($path, $file, $fileName, $options);
-         $model->image = Storage::disk('azure')->url("$path/$fileName");
+         $model->image = "https://cozxeg.blob.core.windows.net/".$path."/".$fileName;
         }
     }
 
